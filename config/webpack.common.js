@@ -41,12 +41,16 @@ module.exports = {
             },
             //Indicates that png files are assets to be processed by webpack
             {
-                test: /\.png$/,
+                test: /\.(png|gif)$/,
                 type: 'asset/resource'
             },
             {
-                test: /\.gif$/,
-                type: 'asset/resource'
+                test: /\.scss$/,
+                use: [
+                  'vue-style-loader',
+                  'css-loader',
+                  'sass-loader'
+                ]
             }
         ]
     }
