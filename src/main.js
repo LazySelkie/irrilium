@@ -7,8 +7,8 @@ import MainView from './views/MainView.vue';
 import EquipmentView from './views/EquipmentView.vue';
 import NotFound from './views/NotFound.vue';
 const routes = [
-    { path: '/', component: MainView },
-    { path: '/equipment', component: EquipmentView },
+    { path: '/irrilium/', component: MainView },
+    { path: '/irrilium/equipment', component: EquipmentView },
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
 ];
 const router = createRouter({

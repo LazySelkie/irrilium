@@ -1,5 +1,5 @@
 <template>
-    <h1>Not found. Please proceed to <RouterLink to="/">main page</RouterLink></h1>
+    <h1>Not found. Please proceed to <RouterLink to="/irrilium/">main page</RouterLink></h1>
 </template>
 
 <script>
