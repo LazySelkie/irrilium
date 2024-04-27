@@ -1,12 +1,25 @@
-*,
+/* *,
 *::before,
 *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} */
+
+html, body, #main, #app {
+	height: 100%;
+}
+#app {
+    width: 100%;
+    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 body {
-    background-color: aquamarine;
-    color: coral;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
