@@ -1,7 +1,6 @@
 <template>
-    <RouterView />
-    <!-- <div id="main">
-        <img src="./static/adnd logo.png" alt="Advanced Dungeons and Dragons">
+    <div id="main">
+        <img src="../static/adnd logo.png" alt="Advanced Dungeons and Dragons">
         <div class="title">
             <p>Player’s Hand Book</p>
             <p><b>IRRILIUM Edition</b></p>
@@ -12,43 +11,43 @@
             <div class="row">
                 <div class="card">
                     <p>Создание персонажа</p>
-                    <a href="/irrilium/character_creation.html">
-                        <img src="./static/links_1.gif" alt="Создание персонажа">
-                    </a>
+                    <RouterLink to="/character_creation">
+                        <img src="../static/links_1.gif" alt="Создание персонажа">
+                    </RouterLink>
                 </div>
                 <div class="card">
                     <p>Боги Иррилиума</p>
-                    <a href="/irrilium/gods.html">
-                        <img src="./static/links_2.gif" alt="Боги Иррилиума">
-                    </a>
+                    <RouterLink to="/gods">
+                        <img src="../static/links_2.gif" alt="Боги Иррилиума">
+                    </RouterLink>
                 </div>
                 <div class="card">
                     <p>Магия</p>
-                    <a href="/irrilium/magic.html">
-                        <img src="./static/links_3.gif" alt="Магия">
-                    </a>
+                    <RouterLink to="/magic">
+                        <img src="../static/links_3.gif" alt="Магия">
+                    </RouterLink>
                 </div>
             </div>
             <div class="row">
                 <div class="card">
                     <p>Разные правила</p>
-                    <a href="/irrilium/other_rules.html">
-                        <img src="./static/links_4.gif" alt="Разные правила">
-                    </a>
+                    <RouterLink to="/other_rules">
+                        <img src="../static/links_4.gif" alt="Разные правила">
+                    </RouterLink>
                 </div>
                 <div class="card">
                     <p>Снаряжение</p>
                     <RouterLink to="/equipment">
-                        <a href="/irrilium/equipment.html">
-                            <img src="./static/links_5.gif" alt="Снаряжение">
-                        </a>
+                        <!-- <a href="/irrilium/equipment.html"> -->
+                            <img src="../static/links_5.gif" alt="Снаряжение">
+                        <!-- </a> -->
                     </RouterLink>
                 </div>
                 <div class="card">
                     <p>Сражение и тактика</p>
-                    <a href="/irrilium/equipment.html">
-                        <img src="./static/links_6.gif" alt="Сражение и тактика">
-                    </a>
+                    <RouterLink to="/battle">
+                        <img src="../static/links_6.gif" alt="Сражение и тактика">
+                    </RouterLink>
                 </div>
             </div>
         </div>
@@ -57,7 +56,7 @@
             <p>Наследный PHB (ссылка)</p>
             <p id="update-date">Последнее обновление: 27.04.2024</p>
         </div>
-    </div> -->
+    </div>
 </template>
 
 <script>
@@ -65,7 +64,7 @@
 import { defineComponent } from 'vue'; 
 
 export default defineComponent({
-    name: 'App'
+    name: 'MainView'
 });
 
 </script>
@@ -85,7 +84,7 @@ body {
     
     width: 100%;
     background-color: #150115;
-    background-image: url("static/main background.jpg");
+    background-image: url("../static/main background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
