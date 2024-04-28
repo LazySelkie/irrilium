@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import { createWebHistory, createRouter } from 'vue-router'
+import { createWebHashHistory, createRouter } from 'vue-router'
 import App from './App.vue'     //Our .vue startup file
 
 // import HomeView from './HomeView.vue' // импортим так то, на что ссылки
@@ -13,7 +13,7 @@ const routes = [
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
 ];
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes,
 });
 
