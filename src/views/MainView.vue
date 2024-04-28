@@ -11,19 +11,19 @@
             <div class="row">
                 <div class="card">
                     <p>Создание персонажа</p>
-                    <RouterLink to="/irrilium/character_creation">
+                    <RouterLink to="/character_creation">
                         <img src="../static/links_1.gif" alt="Создание персонажа">
                     </RouterLink>
                 </div>
                 <div class="card">
                     <p>Боги Иррилиума</p>
-                    <RouterLink to="/irrilium/gods">
+                    <RouterLink to="/gods">
                         <img src="../static/links_2.gif" alt="Боги Иррилиума">
                     </RouterLink>
                 </div>
                 <div class="card">
                     <p>Магия</p>
-                    <RouterLink to="/irrilium/magic">
+                    <RouterLink to="/magic">
                         <img src="../static/links_3.gif" alt="Магия">
                     </RouterLink>
                 </div>
@@ -31,13 +31,13 @@
             <div class="row">
                 <div class="card">
                     <p>Разные правила</p>
-                    <RouterLink to="/irrilium/other_rules">
+                    <RouterLink to="/other_rules">
                         <img src="../static/links_4.gif" alt="Разные правила">
                     </RouterLink>
                 </div>
                 <div class="card">
                     <p>Снаряжение</p>
-                    <RouterLink to="/irrilium/equipment">
+                    <RouterLink to="/equipment">
                         <!-- <a href="/irrilium/equipment.html"> -->
                             <img src="../static/links_5.gif" alt="Снаряжение">
                         <!-- </a> -->
@@ -45,7 +45,7 @@
                 </div>
                 <div class="card">
                     <p>Сражение и тактика</p>
-                    <RouterLink to="/irrilium/battle">
+                    <RouterLink to="/battle">
                         <img src="../static/links_6.gif" alt="Сражение и тактика">
                     </RouterLink>
                 </div>
