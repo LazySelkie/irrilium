@@ -54,7 +54,7 @@
 
         <div class="footer">
             <p>Наследный PHB (ссылка)</p>
-            <p id="update-date">Последнее обновление: 27.04.2024</p>
+            <p id="update-date">Последнее обновление: 03.05.2024</p>
         </div>
     </div>
 </template>
@@ -70,28 +70,10 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-// html, body, #main {
-//     height: 100%;
-// }
-// body {
-//     margin: 0 auto;
-
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
 #main {
-    
-    // width: 100%;
-    // background-color: #150115;
     background-image: url("../static/main background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    // color: white;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: flex-end;
 }
 img {
     padding-top: 1em;

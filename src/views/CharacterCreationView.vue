@@ -1,9 +1,9 @@
 <template>
-    <div class="background">
+    <div class="background" id="character">
         <main-page-link/>
 
         <div class="title">
-            <h1>Страница не найдена. Кликните надпись выше, чтобы вернуться на главную</h1>
+            <h1>Создание персонажа</h1>
             <div class="line"></div>
         </div>
 
@@ -15,11 +15,11 @@
 
 <script>
 
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'; 
 import MainPageLink from '../components/MainPageLink.vue';
 
 export default defineComponent({
-    name: 'NotFound',
+    name: 'CharacterCreationView',
     components: {
         MainPageLink
     },
@@ -28,19 +28,22 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-.background {
+#character {
     background-image: url("../static/background_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
-    justify-content: center;
-
+    justify-content: flex-start;
+}
+.title {
+    width: 90%;
     text-align: center;
-    font-family: "Cambria", "serif";
-    color: #D9D9D9;
-
-    .title {
-        width: 99%;
+    
+    h1 {
+        margin: 0;
+    }
+    .line {
+        margin-bottom: 1em;
     }
 }
 </style>

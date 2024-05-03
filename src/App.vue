@@ -26,11 +26,13 @@ body {
 .background {
     width: 100%;
     background-color: #150115;
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+
+    font-family: "Cambria", "serif";
+    color: #D9D9D9;
 }
 .line {
     width: 90%;
