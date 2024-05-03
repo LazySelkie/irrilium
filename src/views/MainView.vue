@@ -1,5 +1,5 @@
 <template>
-    <div id="main">
+    <div class="background" id="main">
         <img src="../static/adnd logo.png" alt="Advanced Dungeons and Dragons">
         <div class="title">
             <p>Player’s Hand Book</p>
@@ -70,28 +70,28 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-html, body, #main {
-    height: 100%;
-}
-body {
-    margin: 0 auto;
+// html, body, #main {
+//     height: 100%;
+// }
+// body {
+//     margin: 0 auto;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
 #main {
     
-    width: 100%;
-    background-color: #150115;
+    // width: 100%;
+    // background-color: #150115;
     background-image: url("../static/main background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    // color: white;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: flex-end;
 }
 img {
     padding-top: 1em;
