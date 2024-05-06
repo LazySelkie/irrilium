@@ -5,21 +5,19 @@
         <div class="title">
             <h1>Создание персонажа</h1>
             <div class="line"></div>
+        </div>
 
-            <div class="flex-row links">
+        <div class="links">
+            <div class="flex-row">
                 <img src="../static/character.jpg">
                 <div class="flex-column">
                     <template v-for="(link, index) in links">
-                        <RouterLink to=link.link>
+                        <RouterLink :to="link.link">
                             <p> {{ link.name }} </p>
                         </RouterLink>
                     </template>
                 </div>
             </div>
-        </div>
-
-        <div class="links">
-            
         </div>
     </div>
 </template>
@@ -109,6 +107,7 @@ img {
         color: #D9D9D9;
         
         p {
+            text-align: center;
             width: 100%;
             margin: 0.2em;
             margin-left: 1.5em;

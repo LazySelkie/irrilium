@@ -7,12 +7,10 @@
             <div class="line"></div>
         </div>
 
-        <div class="links">
-            <div class="link-item">
-                <RouterLink style="text-decoration: none; color: white;" to="/weapons">
-                    <p>Оружие</p>
-                </RouterLink>
-            </div>
+        <div class="links flex-column">
+            <RouterLink to="/weapons">
+                <p>Оружие</p>
+            </RouterLink>
         </div>
     </div>
 </template>
@@ -51,24 +49,27 @@ export default defineComponent({
     }
 }
 
-.links .link-item {
-    min-width: 250px;
-    text-align: center;
+.links {
+    font-size: 20px;
 
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        purple,
-        rgba(0, 0, 0, 0)
-    ) 0 100%;
+    a {
+        min-width: 180px;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        color: #D9D9D9;
+        
+        margin: 0.2em;
+        padding: 0.4em 0.5em;
+        
+        border: 2px solid rgba(0, 0, 0, 0.37);
+        border-radius: 5px;
+        background: linear-gradient(90deg, rgba(39, 8, 75, 0.759) 0%, rgba(57, 12, 89, 0.219) 62%, rgba(200, 0, 255, 0.05) 100%);
 
-    border-radius: 0.6em;
-    border-right: 0;
-    
-    background: linear-gradient(90deg, rgba(74, 8, 75, 0.759) 0%, rgba(57, 12, 89, 0.219) 62%, rgba(0,212,255,0) 100%); 
-    /*background: linear-gradient(90deg, rgba(39, 8, 75, 0.759) 0%, rgba(57, 12, 89, 0.219) 62%, rgba(0,212,255,0) 100%); */
+        p {
+            margin: 0;
+        }
+    }
 }
 
 </style>
