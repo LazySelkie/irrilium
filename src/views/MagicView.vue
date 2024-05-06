@@ -11,19 +11,19 @@
             <div class="flex-row">
                 <div class="card">
                     <p>Тайная магия</p>
-                    <RouterLink to="/arcane_magic">
+                    <RouterLink to="/magic/arcane_magic">
                         <img src="../static/magic_1.gif" alt="">
                     </RouterLink>
                 </div>
                 <div class="card">
                     <p>Божественная магия</p>
-                    <RouterLink to="/divine_magic">
+                    <RouterLink to="/magic/divine_magic">
                         <img src="../static/magic_2.gif" alt="">
                     </RouterLink>
                 </div>
                 <div class="card">
                     <p>Магические компоненты</p>
-                    <RouterLink to="/magic_components">
+                    <RouterLink to="/magic/magic_components">
                         <img src="../static/magic_3.gif" alt="">
                     </RouterLink>
                 </div>

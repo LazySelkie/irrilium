@@ -7,8 +7,13 @@
             <div class="line"></div>
         </div>
 
-        <div class="links">
-            
+        <div class="links flex-column">
+            <RouterLink to='/other_rules/divine_creation'>
+                <p>Божественное созидание</p>
+            </RouterLink>
+            <RouterLink to='/other_rules/negative_healing'>
+                <p>Негативное исцеление</p>
+            </RouterLink>
         </div>
     </div>
 </template>
@@ -44,6 +49,28 @@ export default defineComponent({
     }
     .line {
         margin-bottom: 1em;
+    }
+}
+
+.links {
+    font-size: 20px;
+
+    a {
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        color: #D9D9D9;
+        
+        margin: 0.2em;
+        padding: 0.4em 0.5em;
+        
+        border: 2px solid rgba(0, 0, 0, 0.37);
+        border-radius: 5px;
+        background: linear-gradient(90deg, rgba(39, 8, 75, 0.759) 0%, rgba(57, 12, 89, 0.219) 62%, rgba(200, 0, 255, 0.05) 100%);
+
+        p {
+            margin: 0;
+        }
     }
 }
 </style>
