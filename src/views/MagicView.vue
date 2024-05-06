@@ -7,8 +7,35 @@
             <div class="line"></div>
         </div>
 
-        <div class="links">
-            
+        <div class="links flex-column">
+            <div class="flex-row">
+                <div class="card">
+                    <p>Тайная магия</p>
+                    <RouterLink to="/arcane_magic">
+                        <img src="../static/magic_1.gif" alt="">
+                    </RouterLink>
+                </div>
+                <div class="card">
+                    <p>Божественная магия</p>
+                    <RouterLink to="/divine_magic">
+                        <img src="../static/magic_2.gif" alt="">
+                    </RouterLink>
+                </div>
+                <div class="card">
+                    <p>Магические компоненты</p>
+                    <RouterLink to="/magic_components">
+                        <img src="../static/magic_3.gif" alt="">
+                    </RouterLink>
+                </div>
+            </div>
+            <!-- <div class="flex-row">
+                <div class="card">
+                    <p>Магические компоненты</p>
+                    <RouterLink to="/magic_components">
+                        <img src="../static/magic_3.gif" alt="">
+                    </RouterLink>
+                </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -44,6 +71,39 @@ export default defineComponent({
     }
     .line {
         margin-bottom: 1em;
+    }
+}
+
+.links {
+    width: 80%;
+    margin-top: 5%;
+}
+.flex-row {
+    width: 100%;
+    height: 150%;
+    justify-content: space-evenly;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0 0 0.5em 0;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    padding-top: 0.6em;
+    padding-bottom: 0.2em;
+    
+    border: 2px solid rgba(0, 0, 0, 0.37);
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgba(39, 8, 75, 0.759) 0%, rgba(57, 12, 89, 0.219) 62%, rgba(0,212,255,0) 100%);
+
+    img {
+        border-radius: 25px;
+        max-height: 180px;
+    }
+    p {
+        text-align: center;
     }
 }
 </style>
