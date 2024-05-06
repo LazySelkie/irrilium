@@ -5,7 +5,7 @@
             <p>Player’s Hand Book</p>
             <p><b>IRRILIUM Edition</b></p>
         </div>
-        <p>Dice Roller image</p>
+        <!-- <p>Dice Roller image</p> -->
 
         <div id="links">
             <div class="row">
@@ -38,9 +38,7 @@
                 <div class="card">
                     <p>Снаряжение</p>
                     <RouterLink to="/equipment">
-                        <!-- <a href="/irrilium/equipment.html"> -->
                             <img src="../static/links_5.gif" alt="Снаряжение">
-                        <!-- </a> -->
                     </RouterLink>
                 </div>
                 <div class="card">

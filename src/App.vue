@@ -29,7 +29,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    // justify-content: flex-end;
+    justify-content: space-between;
 
     font-family: "Cambria", "serif";
     color: #D9D9D9;
