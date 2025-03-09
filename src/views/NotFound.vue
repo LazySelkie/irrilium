@@ -1,15 +1,17 @@
 <template>
     <div class="background">
-        <main-page-link/>
+        <container>
+            <main-page-link/>
 
-        <div class="title">
-            <h1>Страница не найдена. Кликните надпись выше, чтобы вернуться на главную</h1>
-            <div class="line"></div>
-        </div>
+            <div class="title">
+                <h1>Страница не найдена. Кликните надпись выше, чтобы вернуться на главную</h1>
+                <div class="line"></div>
+            </div>
 
-        <div class="links">
-            
-        </div>
+            <div class="links">
+                
+            </div>
+        </container>
     </div>
 </template>
 

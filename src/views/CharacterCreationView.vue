@@ -1,24 +1,26 @@
 <template>
     <div class="background" id="character">
-        <main-page-link/>
+        <container>
+            <main-page-link/>
 
-        <div class="title">
-            <h1>Создание персонажа</h1>
-            <div class="line"></div>
-        </div>
+            <div class="title">
+                <h1>Создание персонажа</h1>
+                <div class="line"></div>
+            </div>
 
-        <div class="links">
-            <div class="flex-row">
-                <img src="../static/character.jpg">
-                <div class="flex-column">
-                    <template v-for="(link, index) in links">
-                        <RouterLink :to="link.link">
-                            <p> {{ link.name }} </p>
-                        </RouterLink>
-                    </template>
+            <div class="links">
+                <div class="flex-row">
+                    <img src="../static/character.jpg">
+                    <div class="flex-column">
+                        <template v-for="(link, index) in links">
+                            <RouterLink :to="link.link">
+                                <p> {{ link.name }} </p>
+                            </RouterLink>
+                        </template>
+                    </div>
                 </div>
             </div>
-        </div>
+        </container>
     </div>
 </template>
 

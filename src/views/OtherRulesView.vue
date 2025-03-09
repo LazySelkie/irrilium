@@ -1,20 +1,22 @@
 <template>
     <div class="background" id="other-rules">
-        <main-page-link/>
+        <container>
+            <main-page-link/>
 
-        <div class="title">
-            <h1>Разные правила</h1>
-            <div class="line"></div>
-        </div>
+            <div class="title">
+                <h1>Разные правила</h1>
+                <div class="line"></div>
+            </div>
 
-        <div class="links flex-column">
-            <RouterLink to='/other_rules/divine_creation'>
-                <p>Божественное созидание</p>
-            </RouterLink>
-            <RouterLink to='/other_rules/negative_healing'>
-                <p>Негативное исцеление</p>
-            </RouterLink>
-        </div>
+            <div class="links flex-column">
+                <RouterLink to='/other_rules/divine_creation'>
+                    <p>Божественное созидание</p>
+                </RouterLink>
+                <RouterLink to='/other_rules/negative_healing'>
+                    <p>Негативное исцеление</p>
+                </RouterLink>
+            </div>
+        </container>
     </div>
 </template>
 

@@ -1,17 +1,19 @@
 <template>
     <div class="background" id="equipment">
-        <main-page-link/>
+        <container>
+            <main-page-link/>
 
-        <div class="title">
-            <h1>Вещи и снаряжение</h1>
-            <div class="line"></div>
-        </div>
+            <div class="title">
+                <h1>Вещи и снаряжение</h1>
+                <div class="line"></div>
+            </div>
 
-        <div class="links flex-column">
-            <RouterLink to="/weapons">
-                <p>Оружие</p>
-            </RouterLink>
-        </div>
+            <div class="links flex-column">
+                <RouterLink to="/weapons">
+                    <p>Оружие</p>
+                </RouterLink>
+            </div>
+        </container>
     </div>
 </template>
 

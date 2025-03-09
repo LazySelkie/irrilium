@@ -1,21 +1,23 @@
 <template>
     <div class="background" id="battle">
-        <main-page-link/>
+        <container>
+            <main-page-link/>
 
-        <div class="title">
-            <h1>Сражение и тактика</h1>
-            <div class="line"></div>
-        </div>
-
-        <div class="links">
-            <div class="flex-column">
-                <template v-for="(link, index) in links">
-                    <RouterLink :to="link.link">
-                        <p> {{ link.name }} </p>
-                    </RouterLink>
-                </template>
+            <div class="title">
+                <h1>Сражение и тактика</h1>
+                <div class="line"></div>
             </div>
-        </div>
+
+            <div class="links">
+                <div class="flex-column">
+                    <template v-for="(link, index) in links">
+                        <RouterLink :to="link.link">
+                            <p> {{ link.name }} </p>
+                        </RouterLink>
+                    </template>
+                </div>
+            </div>
+        </container>
     </div>
 </template>
 

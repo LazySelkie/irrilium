@@ -13,9 +13,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-html, body, #main, .background {
-    height: 100%;
-}
+/* НЕ СТАВИТЬ height: 100% или 100vh у html, body, #main, .background, 
+иначе на длинных страницах фон не "прилипает" к камере (двигаясь вместе с ней), а зависает чисто наверху */
+
 body {
     margin: 0 auto;
 
@@ -55,5 +55,13 @@ body {
 .flex-row {
     display: flex;
     justify-content: center
+}
+
+container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
 }
 </style>
